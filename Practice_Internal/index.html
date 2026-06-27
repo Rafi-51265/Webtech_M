@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>@Rafi's UI</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            #Heading{
+                text-align: center;color: red;
+                font-size: 30px;
+            }
+            h2{
+                text-align:center;color:blue;
+                font-size: 20px;
+                font-style: italic;
+                font-weight: semi-bold;
+            }
+            p{
+                text-align: center;
+                color: #75de69;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 20px;
+                font-style: italic;
+                font-weight: bold;
+            }
+             
+            .p2_style{
+                text-align: center;
+                color: violet;
+                font-family: Times New Roman, Times, serif;
+                font-size: 15px;
+                font-style: cursive;
+                font-weight: semi-bold;
+            }
+            .Label{
+                text-align: left;
+                font-size: 15px;
+                font-style: italic;
+                font-weight: bold;
+                
+            }
+            .Input{
+                text-align: left;
+                font-size: 15px;
+                border: 1px solid yellow;
+            }
+            input::placeholder{
+                text-align: center;
+                color: off-white;
+                font-size: 15px;
+                font-style: italic;
+                font-weight: semi-bold;
+            }
+            #btnRefresh{
+                text-align: center;
+                color: skyblue;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: bold;
+                border: 1px solid goldenrod;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 2px;
+                
+            }
+            #btnRegister{
+                text-align: center;
+                color: red;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: bold;
+                border: 1px solid black;
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 3px;
+                border-height: 10px;
+            }
+            #img1{
+                align-items: bottomright;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        
+
+        <h1 id="Heading">Welcome to @Rafi's UI</h1>
+        <hr style="border: 0; border-top: 3px solid red; margin: 20px 0;">
+
+        <h2>Registation Form</h2>
+        <hr style="border: 0; border-top: 2px solid blue;margin: 20px 0;">
+
+        <p>Please fill out the form below to register:</p>
+
+        <p class="p2_style">"Input all information carefully!!!"</p>
+
+        <form style="width: 300px; margin: 0 auto;">
+            <label class="Label" for="firstname">FirstName: </label>
+            <input class="Input" type="text" id="firstname" placeholder=">>>Enter your first name<<<"><br><br>
+
+            <label class="Label" for="lastname">LastName: </label>
+            <input  class="Input" type="text" id="lastname" placeholder=">>>Enter your last name<<<"><br><br>
+
+            <label class="Label" for="userID">UserID: </label>
+            <input class="Input" type="text" id="userID" ><br><br>
+
+            <label class="Label" for="gmail">Mail: </label>
+            <input class="Input" type="text" id="gmail" ><br><br>
+
+            <label class="Label" for="phone">Phone: </label>
+            <input class="Input" type="text" id="phone" ><br><br>
+
+            <label for="gender">Gender: </label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            <br><br>
+            
+            <label for="country">Country: </label>
+            <select id="country">
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Spain (España)">Spain (España)</option>
+                <option value="United States of America">United States of America</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="Malaysia">Malaysia</option>
+                
+
+            </select>
+            <br><br>
+
+            <label for="select-state">State: </label>
+            <input list="states" id="select-state" name="state">
+            <datalist id="states">
+                <option value="BD">
+                <option value="UAE">
+                <option value="KSA">
+                <option value="SG">
+                <option value="UK">
+                <option value="ESP">
+                <option value="USA">
+                <option value="EGY">
+                <option value="AUS">
+                <option value="DEU">
+                <option value="MYS">
+
+            </datalist>
+            <br><br>
+
+            <label for="address">Address: </label>
+            <textarea id="address" rows="2" cols="30"></textarea>
+
+
+            <button id="btnRefresh">Refresh</button>
+            <button id="btnRegister">Register</button>
+
+            <img  src="rafiul.jpg" id="img1" alt="Rafiul Hasan" title="Rafiul Hasan">
+            
+        </form>
+
+    </body>
+</html>

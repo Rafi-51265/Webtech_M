@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.alert("Are you want to entire this page?");
+    </script>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">See Date and Time</button>
+    <p id="demo"></p>
+
+    <p id="demo1">JavaScript can change HTML content.</p>
+    <button type="button" onclick="document.getElementById('demo1').innerHTML = 'Hello JavaScript!'">Click me</button><br><br>
+
+    <p id="demo2" style="display:none">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo2').style.display='block'">Click Me!</button>
+
+    <p id="demo3">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+</body>
+</html>

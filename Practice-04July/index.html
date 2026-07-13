@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Rafi's UI</title>
+</head>
+<body>
+    <h3>Welcome</h3>
+    <hr color="black" size="3px">
+
+    <div class="container">
+
+    <fieldset id="fieldset">
+        <legend><b>HTML Text Formatting Elements</b></legend>
+        <form action="submit.php" method="post">
+            <b>This text is bold</b><br>
+            <strong>This text is important!</strong><br>
+            <i>This text is italic</i><br>
+            <em>This text is emphasized</em><br>
+            <small>This is some smaller text.</small><br>
+            <p>Do not forget to buy <mark>milk</mark> today.</p>
+            <p>My favorite color is <del>blue</del> red.</p>
+            <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+            <p>This is <sub>subscripted</sub> text.</p>
+            <p>This is <sup>superscripted</sup> text.</p>
+
+            <input id="btnReg" type="submit" value="Register">
+            <input id="btnReset" type="reset" value="Reset">
+        </form>
+
+    </fieldset>
+
+    <fieldset id="fieldset">
+        <legend>@Sumaiya</legend>
+        <form action="submit.php" method="post">
+            <a href="https://rafi-51265.github.io/Portfolio/">Visit my portfolio</a>
+            * or *
+            <a href="https://github.com/Rafi-51265/Webtech_M">Visit github repository</a>
+            <br><br>
+            <img src="@sumaiya.png" width="300" height="300"alt="@Sumaiya's picture"> 
+            <pre id="pre">
+                'Love comes quietly,
+                        finally, drops
+                                about me, on me,
+                    in the old ways'
+            </pre>
+        </form>
+    </fieldset>
+    </div>
+    <br><br>
+
+    <table align="center" style="width:75%">
+        <caption> <u> Student Information Table </u> </caption>
+
+        <colgroup>
+            <col>
+            <col>
+            <col style="background-color:yellow">
+            <col>
+            <col>
+            <col style="background-color:lightblue">
+        </colgroup>
+        
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>CGPA</th>
+            <th>Department</th>
+            <th>Contact</th>
+            <th>Major</th>
+        </tr>
+        <tr>
+            <td>Rafiul</td>
+            <td>23-51265-1</td>
+            <td>Probotion</td>
+            <td>Bsc CSE</td>
+            <td>@student.aiub.edu</td>
+            
+        </td>
+        </tr>
+        <tr>
+            <td>Sifat</td>
+            <td>23-51221-1</td>
+            <td>Standard</td>
+            <td>Bsc CSE</td>
+            <td>@student.aiub.edu</td>
+            <td>Software Engineering</td>
+
+        </tr>
+        <tr>
+            <td>Rahat</td>
+            <td>23-51221-1</td>
+            <td>4 outof 4</td>
+            <td>Bsc CSE</td>
+            <td>@student.aiub.edu</td>
+            <td>Information Technology</td>
+            
+        </tr>
+    </table><br>
+    <div class="fieldset">
+    <fieldset style="background-color: lightblue;">
+        <div align="center">
+            <legend class="legend"><u>Student Registration Form</u></legend><br>
+            <form action="submit.php" method="post">
+                <label class="lable" for="first_name"><u>First Name:</u></label>
+                <input class="input"  type="text" id="first_name" name="first_name" placeholder="Enter your First_Name " required><br><br>
+
+                <label class="lable" for="last_name"><u>Last Name:</u></label>
+                <input class="input" type="text" id="last_name" name="last_name" placeholder="Enter your Last_Name " required><br><br>
+
+                <label class="lable" for="email"><u>Email:</u></label>
+                <input class="input" type="email" id="email" name="email" placeholder="Enter your Email " required><br><br>
+
+                <label class="lable" for="password"><u>Password:</u></label>
+                <input class="input" type="password" id="password" name="password" placeholder="Enter your Password " required><br><br>
+
+                <label class="lable" for="gender">Gender :</label>
+                <input class="inputbtn" type="radio" id="male" name="gender" value="male">
+                <label class="inputbtn" for="male">Male</label>
+                <input class="inputbtn" type="radio" id="female" name="gender" value="female">
+                <label class="inputbtn" for="female">Female</label>
+                <input class="inputbtn" type="radio" id="other" name="gender" value="other">
+                <label class="inputbtn" for="other">Other</label><br><br>  
+                
+                <label class="lable" for="hoby">Hobbies :</label>
+                <input class="inputbtn" type="checkbox" id="reading" name="hoby" value="reading">
+                <label class="inputbtn" for="reading">Reading</label>
+                <input class="inputbtn" type="checkbox" id="travelling" name="hoby" value="travelling">
+                <label class="inputbtn" for="travelling">Travelling</label>
+                <input class="inputbtn" type="checkbox" id="sports" name="hoby" value="sports">
+                <label class="inputbtn" for="sports">Sports</label><br><br>
+
+                <label class="lable" for="country">Country :</label>
+                <select class="input" id="country" name="country" required>
+                    <optgroup class="optgroup1" label="Asia" text-color="blue">
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="South Korea">South Korea</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Oman">Oman</option>
+                    </optgroup>
+                    <optgroup class="optgroup2" label="Europe" text-color="green">
+                        <option value="Austria">Austria</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Finland">Finland</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Serbia">Serbia</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Vatican City">Vatican City</option>
+                    </optgroup>
+                </select><br><br>
+                <label class="lable" for="state">State :</label>
+                <select class="input" list="states" id="state" name="state">
+                <optgroup label="States">
+                    <option value="Bangladesh">BD</option>
+                    <option value="United Arab Emirates">UAE</option>
+                    <option value="Saudi Arabia">KSA</option>
+                    <option value="Singapore">SG</option>
+                    <option value="United Kingdom">UK</option>
+                    <option value="Spain (España)">ESP</option>
+                    <option value="United States of America">USA</option>
+                    <option value="Egypt">EGY</option>
+                    <option value="Australia">AUS</option>
+                    <option value="Germany">DEU</option>
+                    <option value="Malaysia">MYS</option>
+                </optgroup>
+                </select><br><br>
+
+                <div class="terms-box">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div><br><br>
+
+                <input id="btnSubmit" type="submit" value="Submit">
+                <input id="btnReset" type="reset" value="Reset">
+            
+            </form>
+        </div>
+
+    </fieldset><br><br>
+
+    <fieldset style="background-color: lightblue;">
+
+        <ul style="list-style-type:circle">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ul style="list-style-type:disc">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ul style="list-style-type:square">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        /*...Styles...*/
+        <hr>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea
+                        <ul>
+                            <li>China</li>
+                            <li>Africa</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+        /*...Styles...*/
+        <ol>
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ol>
+    </fieldset>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+h3{
+    style: italic;
+    border-radius: 30px;
+    border: 3px solid black;
+    background-color: #870707;
+    color: rgb(255, 255, 153);
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 50px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    gap: 20px;      
+}
+
+fieldset{
+    width: 50%;
+}
+img{
+    border-radius: 20%;
+    border: 3px solid black;
+
+}
+#fieldset{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 20px;
+}
+#pre{
+    text-align:center;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+#btnSubmit{
+    background-color: rgb(0, 255, 0);
+
+    border: 50% solid powderblue;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 20px;
+
+    font-family: Arial;
+    font-style: dashed;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+#btnReset{
+    border-radius: 50px;
+    border: 3px solid black;
+    border-style: dotted;
+    border-color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    
+    background-color: #ff0000;
+
+    text-align: center;
+    font-family: Arial;
+    font-style: Times New Roman;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+.optgroup1{
+    color: blue;
+    font-weight: bold;
+    font-style: bold;
+}
+.optgroup2{
+    color: green;
+    font-weight: bold;
+    font-style: bold;
+}
+.lable{
+    color: rgb(0, 0, 0);
+    background-color: rgb(102, 255, 153);
+
+    border: 2px solid black;
+    border-radius: 15px;
+
+    text-shadow: 2px 2px 5px black;
+
+    text-align: right;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+    padding: 2%;
+    display: inline-block;
+}
+.input{
+    background-color: rgb(102, 255, 140);
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: center;
+    padding: 2%;
+    font-size: 20px;
+    font-style: bold;
+}
+.inputbtn{
+    background-color:#EBF527;
+    border: 2px solid goldenrod;
+    border-radius: 10%;
+}
+.legend{
+    background-color: rgb(83, 151, 93);
+    border: 25%;
+    text-align: center;
+}
+.terms-box{
+    background-color: lightgreen;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+.fieldset{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    
+    padding: 15px;
+}
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}

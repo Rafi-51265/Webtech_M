@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My E-commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My E-commerce Site</h1>
+</header>
+
+<div class="container">
+
+    <fieldset>
+
+        <legend>Add To Cart</legend>
+
+        <p>Product : Pen</p>
+
+        <p>Unit Price : 100 Tk</p>
+
+        Quantity
+
+        <input type="number" id="qty"
+        value="1"
+        min="1"
+        onchange="calculate()">
+
+        <h3>Total :
+            <span id="total">100</span>
+            Tk
+        </h3>
+
+        <p id="coupon"></p>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Checkout Form</legend>
+
+        Address
+
+        <br>
+
+        <textarea id="address"></textarea>
+
+        <br><br>
+
+        Delivery
+
+        <select id="delivery"
+        onchange="calculate()">
+
+            <option value="50">
+                Inside Dhaka
+            </option>
+
+            <option value="120">
+                Outside Dhaka
+            </option>
+
+        </select>
+
+        <br><br>
+
+        Grand Total :
+
+        <span id="grandTotal">
+            150
+        </span>
+
+        Tk
+
+        <br><br>
+
+        <input
+        type="checkbox"
+        onclick="showButton()">
+
+        I agree to all terms and conditions
+
+        <br><br>
+
+        <button
+        id="submitBtn">
+
+        Submit
+
+        </button>
+
+    </fieldset>
+
+</div>
+
+<footer>
+
+Copyright @2026
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Shop Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Super Shop Billing System</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Customer Information -->
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <label>Name</label>
+            <input type="text" id="name">
+
+            <label>Contact Number</label>
+            <input type="text" id="contact">
+
+            <label>Address</label>
+            <textarea id="address"></textarea>
+        </fieldset>
+
+        <!-- Product Information -->
+        <fieldset>
+
+            <legend>Products</legend>
+
+            <table>
+
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+
+                <tr>
+                    <td>Paper</td>
+                    <td>3 Tk</td>
+                    <td>
+                        <input type="number" id="paper" value="0" min="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pen</td>
+                    <td>20 Tk</td>
+                    <td>
+                        <input type="number" id="pen" value="0" min="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pencil</td>
+                    <td>15 Tk</td>
+                    <td>
+                        <input type="number" id="pencil" value="0" min="0">
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <button onclick="calculateBill()">Calculate Bill</button>
+
+            <button onclick="resetForm()">Reset</button>
+
+        </fieldset>
+
+    </div>
+
+    <div id="bill">
+
+        <h2>Customer Bill</h2>
+
+        <p id="customerInfo"></p>
+
+        <table id="billTable">
+
+        </table>
+
+        <h2 id="grandTotal"></h2>
+
+        <button onclick="window.print()">Print Bill</button>
+
+    </div>
+
+    <footer>
+
+        Copyright © 2026
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Swapno</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <div class="logo">
+            Swapno Super Shop
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <div>
+            <h1>Welcome to Rafi Shop</h1>
+
+            <p>
+                Buy your daily necessary products easily.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ================= REGISTRATION ================= -->
+
+    <section id="register" class="registration">
+
+        <h2>Create Your Account</h2>
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="01712345678"
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="address">Address</label>
+
+                <textarea
+                    id="address"
+                    placeholder="Enter your address"
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <label for="location">
+                    Delivery Location
+                </label>
+                <select id="location">
+                    <option value="">
+                        Select Location
+                    </option>
+                    <option value="dhaka">
+                        Inside Dhaka
+                    </option>
+                    <option value="outside">
+                        Outside Dhaka\
+                    </option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Minimum 8 characters"
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Re-enter password"
+                >
+            </div>
+
+
+            <button type="submit" class="register-btn">
+                Register
+            </button>
+
+        </form>
+
+        <p id="registrationMessage"></p>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="products" class="products-section">
+
+        <h2>Our Products</h2>
+
+        <div class="products-container">
+
+
+            <!-- PEN -->
+
+            <div class="product-card">
+
+                <div class="product-icon">
+                    🖊️
+                </div>
+
+                <h3>Pen</h3>
+
+                <p class="price">
+                    ৳20
+                </p>
+
+                <input
+                    type="number"
+                    id="quantity-pen"
+                    value="1"
+                    min="1"
+                >
+
+                <button
+                    onclick="addToCart('Pen', 20, 'quantity-pen')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PENCIL -->
+
+            <div class="product-card">
+
+                <div class="product-icon">
+                    ✏️
+                </div>
+
+                <h3>Pencil</h3>
+
+                <p class="price">
+                    ৳15
+                </p>
+
+                <input
+                    type="number"
+                    id="quantity-pencil"
+                    value="1"
+                    min="1"
+                >
+
+                <button
+                    onclick="addToCart('Pencil', 15, 'quantity-pencil')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PAPER -->
+
+            <div class="product-card">
+
+                <div class="product-icon">
+                    📄
+                </div>
+
+                <h3>Paper</h3>
+
+                <p class="price">
+                    ৳3
+                </p>
+
+                <input
+                    type="number"
+                    id="quantity-paper"
+                    value="1"
+                    min="1"
+                >
+
+                <button
+                    onclick="addToCart('Paper', 3, 'quantity-paper')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- COFFEE -->
+
+            <div class="product-card">
+
+                <div class="product-icon">
+                    ☕
+                </div>
+
+                <h3>Coffee</h3>
+
+                <p class="price">
+                    ৳120
+                </p>
+
+                <input
+                    type="number"
+                    id="quantity-coffee"
+                    value="1"
+                    min="1"
+                >
+
+                <button
+                    onclick="addToCart('Coffee', 120, 'quantity-coffee')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- GREEN TEA -->
+
+            <div class="product-card">
+
+                <div class="product-icon">
+                    🍵
+                </div>
+
+                <h3>Green Tea</h3>
+
+                <p class="price">
+                    ৳100
+                </p>
+
+                <input
+                    type="number"
+                    id="quantity-tea"
+                    value="1"
+                    min="1"
+                >
+
+                <button
+                    onclick="addToCart('Green Tea', 100, 'quantity-tea')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART ================= -->
+
+    <section id="cart" class="cart-section">
+
+        <h2>Shopping Cart</h2>
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-summary">
+
+    <p>
+        Subtotal:
+        <strong>
+            ৳<span id="subtotal">0</span>
+        </strong>
+    </p>
+
+
+    <p>
+        Discount:
+        <strong>
+            <span id="discountPercent">0</span>%
+        </strong>
+
+        (
+        ৳<span id="discountAmount">0</span>
+        )
+    </p>
+
+
+    <p>
+        After Discount:
+        <strong>
+            ৳<span id="afterDiscount">0</span>
+        </strong>
+    </p>
+
+
+    <p>
+        Delivery Charge:
+        <strong>
+            ৳<span id="delivery">0</span>
+        </strong>
+    </p>
+
+
+    <p class="grand-total">
+        Grand Total:
+        <strong>
+            ৳<span id="grandTotal">0</span>
+        </strong>
+    </p>
+
+
+    <button
+        class="checkout-btn"
+        onclick="checkout()"
+    >
+        Place Order
+    </button>
+
+</div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Rafi Shop</h3>
+
+        <p>
+            Your trusted online shop.
+        </p>
+
+        <p>
+            Email: support@rafishop.com
+        </p>
+
+        <p>
+            Phone: 01712345678
+        </p>
+
+        <p>
+            &copy; 2026 Rafi Shop. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

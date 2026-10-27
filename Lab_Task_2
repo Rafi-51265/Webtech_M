@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+
+            <div class="input-group">
+                <label for="courseName">Course Name</label>
+                <input type="text" id="courseName" placeholder="Course name">
+            </div>
+
+            <div class="input-group">
+                <label for="credits">Credits</label>
+                <input type="number" id="credits" placeholder="Credits">
+            </div>
+
+            <div class="input-group">
+                <label for="marks">Marks Obtained</label>
+                <input type="number" id="marks" placeholder="Marks">
+            </div>
+
+            <div class="buttons">
+                <button id="addCourse">Add Course</button>
+                <button id="calculateGPA">Calculate GPA</button>
+                <button id="reset">Reset</button>
+            </div>
+
+        </div>
+
+        <div id="message"></div>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Credits</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+                
+
+            </table>
+
+        </div>
+
+        <div id="gpaDisplay"></div>
+
+    </div>
+
+    <script>
+        let courses = [];
+        const courseName = document.getElementById("courseName");
+        const credits = document.getElementById("credits");
+        const marks = document.getElementById("marks");
+
+        const courseNameError = document.getElementById("courseNameError");
+        const creditsError = document.getElementById("creditsError");
+        const marksError = document.getElementById("marksError");
+
+        const addCourse = document.getElementById("addCourse");
+        const calculateGPA = document.getElementById("calculateGPA");
+        const reset = document.getElementById("reset");
+
+        const courseTableBody = document.getElementById("courseTableBody");
+        const message = document.getElementById("message");
+        const gpaDisplay = document.getElementById("gpaDisplay");
+
+        function isValidCourseName() {
+            if (courseName.value.trim() === "") {
+                courseNameError.innerText = "Course name is required";
+                courseName.classList.add("invalid");
+                courseName.classList.remove("valid");
+                return false;
+            }
+            courseNameError.innerText = "";
+            courseName.classList.add("valid");
+            courseName.classList.remove("invalid");
+            return true;
+        }
+
+        function isValidCredits() {
+            let value = Number(credits.value);
+            if (credits.value === "" || isNaN(value) || value < 1 || value > 6) {
+                creditsError.innerText = "Credits must be between 1 and 6";
+                credits.classList.add("invalid");
+                credits.classList.remove("valid");
+                return false;
+            }
+            creditsError.innerText = "";
+            credits.classList.add("valid");
+            credits.classList.remove("invalid");
+            return true;
+        }
+        function isValidMarks() {
+            let value = Number(marks.value);
+            if (marks.value === "" || isNaN(value) || value < 0 || value > 100) {
+                marksError.innerText = "Marks must be between 0 and 100";
+                marks.classList.add("invalid");
+                marks.classList.remove("valid");
+                return false;
+            }
+            marksError.innerText = "";
+            marks.classList.add("valid");
+            marks.classList.remove("invalid");
+            return true;
+        }
+
+        function getGrade(mark) {
+            if (mark >= 90) {
+                return {
+                    grade: "A+", gradePoint: 4.0
+                };
+            } else if (mark >= 85) {
+                return {
+                    grade: "A",gradePoint: 3.75
+                };
+            } else if (mark >= 80) {
+                return {
+                    grade: "A-",gradePoint: 3.5
+                };
+            } else if (mark >= 75) {
+                return {
+                    grade: "B+",gradePoint: 3.25
+                };
+            } else if (mark >= 70) {
+                return {
+                    grade: "B",gradePoint: 3.0
+                };
+            } else if (mark >= 65) {
+                return {
+                    grade: "B-",gradePoint: 2.75
+                };
+            } else if (mark >= 60) {
+                return {
+                    grade: "C+",gradePoint: 2.5
+                };
+            } else if (mark >= 55) {
+                return {
+                    grade: "C",gradePoint: 2.25
+                };
+            } else if (mark >= 50) {
+                return {
+                    grade: "D",gradePoint: 2.0
+                };
+            } else {
+                return {
+                    grade: "F",gradePoint: 0.0
+             };
+        }
+    }
+    function getGradeByGPA(gpa) {
+        if (gpa >= 4.0) {
+            return "A+";
+        } else if (gpa >= 3.75) {
+            return "A";
+        } else if (gpa >= 3.5) {
+            return "A-";
+        } else if (gpa >= 3.25) {
+            return "B+";
+        } else if (gpa >= 3.0) {
+            return "B";
+        } else if (gpa >= 2.75) {
+            return "B-";
+        } else if (gpa >= 2.5) {
+           return "C+";
+        } else if (gpa >= 2.25) {
+           return "C";
+        } else if (gpa >= 2.0) {
+           return "D";
+        } else {
+           return "F";
+        }
+}
+
+
+
+    </script>
+
+</body>
+</html>
